@@ -1,0 +1,8 @@
+---
+- name: Add EPEL repo - CentOS 7
+  yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm state=present
+
+- name: Install dependencies
+  yum: name={{ item }}
+  with_items:
+   - unzip

@@ -1,0 +1,7 @@
+version: 2.2.0-beta1
+dist_version: elasticsearch-hadoop-{{ version }}
+dist_file: "{{ dist_version }}.zip"
+download_url: "http://download.elastic.co/hadoop/{{ dist_file }}"
+dist_checksum: sha1:ad384dd338ce133b0990f4c0a4f8e5962a683f90
+install_dir: /opt/{{ dist_version }}
+install_dir_symlink: /opt/elasticsearch-hadoop
